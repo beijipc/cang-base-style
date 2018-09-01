@@ -1,0 +1,101 @@
+@import './vars.less';
+
+// @size-0: @size-0;
+// @size-xxs: @size-xxs;
+// @size-xs: @size-xs;
+@size-s: @size-sm;
+@size-m: @size-md;
+@size-l: @size-lg;
+// @size-xl: @size-xl;
+// @size-xxl: @size-xxl;
+
+// margin
+.m(@name, @size) {
+  // 上
+  .m-t-@{name}{
+    margin-top: @size;
+  }
+  // 下
+  .m-b-@{name}{
+    margin-bottom: @size;
+  }
+  // 左
+  .m-l-@{name}{
+    margin-left: @size;
+  }
+  // 右
+  .m-r-@{name}{
+    margin-right: @size;
+  }
+  // 垂直
+  .m-h-@{name}{
+    margin-left: @size;
+    margin-right: @size;
+  }
+  // 水平
+  .m-v-@{name}{
+    margin-top: @size;
+    margin-bottom: @size;
+  }
+  // 四向
+  .m-@{name}{
+    margin: @size;
+  }
+}
+
+// padding
+.p(@name, @size) {
+  // 上
+  .p-t-@{name}{
+    padding-top: @size;
+  }
+  // 下
+  .p-b-@{name}{
+    padding-bottom: @size;
+  }
+  // 左
+  .p-l-@{name}{
+    padding-left: @size;
+  }
+  // 右
+  .p-r-@{name}{
+    padding-right: @size;
+  }
+  // 垂直
+  .p-h-@{name}{
+    padding-left: @size;
+    padding-right: @size;
+  }
+  // 水平
+  .p-v-@{name}{
+    padding-top: @size;
+    padding-bottom: @size;
+  }
+  // 四向
+  .p-@{name}{
+    padding: @size;
+  }
+}
+
+.m(0, @size-0);
+.m(xxs, @size-xxs);
+.m(xs, @size-xs);
+.m(s, @size-s);
+.m(m, @size-m);
+.m(l, @size-l);
+.m(xl, @size-xl);
+.m(xxl, @size-xxl);
+
+.p(0, @size-0);
+.p(xxs, @size-xxs);
+.p(xs, @size-xs);
+.p(s, @size-s);
+.p(m, @size-m);
+.p(l, @size-l);
+.p(xl, @size-xl);
+.p(xxl, @size-xxl);
+
+.p-v-200{
+  padding-top: 200px;
+  padding-bottom: 200px;
+}

@@ -1,0 +1,40 @@
+body{
+  color: @gray;
+}
+#app{
+  background-color: #f2f2f2;
+  min-width: @container-md;
+}
+main{
+  // 页脚固定底部
+  // min-height: 100vh;
+  // padding-top: 196px;
+  // margin-top: -196px;
+  // padding-bottom: 486px;
+  // margin-bottom: -486px;
+}
+a{
+  color: currentColor;
+  &:focus{
+    text-decoration: none;
+  }
+}
+.height-min-300{
+  min-height: 300px;
+}
+.height-min-400{
+  min-height: 400px;
+}
+.height-min-500{
+  min-height: 500px;
+}
+.flex-column{
+  > .flex1{
+    height: 0;
+  }
+}
+.flex-row{
+  > .flex1{
+    width: 0;
+  }
+}

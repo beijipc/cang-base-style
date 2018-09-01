@@ -1,0 +1,147 @@
+// 大小
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.4;
+  word-break: break-all;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.h1,
+h1 {
+  font-size: @font-size-h1;
+}
+
+.h2,
+h2 {
+  font-size: @font-size-h2;
+}
+
+.h3,
+h3 {
+  font-size: @font-size-h3;
+}
+
+.h4,
+h4 {
+  font-size: @font-size-h4;
+}
+
+.h5,
+h5 {
+  font-size: @font-size-h5;
+}
+
+.h6,
+h6 {
+  font-size: @font-size-h6;
+}
+
+.text-0 {
+  font-size: 0;
+}
+
+.text-small {
+  font-size: @font-size-small;
+}
+
+.text-large {
+  font-size: 130%;
+}
+
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+// Transformation
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+
+// 样式
+.text-normal-weight { font-weight: normal; }
+.text-weight-500 { font-weight: 500; }
+.text-bold { font-weight: bold;}
+.text-bolder { font-weight: bolder; }
+.text-delete { text-decoration: line-through; }
+.text-underline { text-decoration: underline; }
+
+.text-link{
+  cursor: pointer;
+}
+.text-shadow {
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 6px;
+}
+
+// 颜色
+.text-primary { color: @primary-color; }
+.text-info { color: @info-color; }
+.text-success { color: @success-color; }
+.text-processing{ color: @processing-color; }
+.text-error { color: @error-color; }
+.text-highlight{ color: @highlight-color; }
+.text-warning { color: @warning-color; }
+.text-muted { color: @muted-color; }
+.text-dark { color: @gray-dark; }
+.text-darker { color: @gray-darker; }
+.text-gray { color: @gray; }
+.text-light { color: @gray-light; }
+.text-lighter { color: @gray-lighter; }
+.text-white { color: white }
+.text-black { color: @gray-base; }
+
+// 行溢出
+[class*='text-line-'] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.text-line-1 { -webkit-line-clamp: 1; }
+.text-line-2 { -webkit-line-clamp: 2; }
+.text-line-3 { -webkit-line-clamp: 3; }
+.text-line-4 { -webkit-line-clamp: 4; }
+.text-line-5 { -webkit-line-clamp: 5; }
+.text-height-1 { line-height: 1; }
+.text-height-08 { line-height: .8; }
+.text-height-07 { line-height: .7; }
+.text-height-15 { line-height: 1.5; }
+
+// 单行溢出隐藏
+.text-overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+// 不换行
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.iconfont {
+  line-height: 1;
+}
