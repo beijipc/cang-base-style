@@ -1,9 +1,9 @@
 {
   "name": "cang-base-style",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "华夏收藏网基本样式，含antd",
   "dependencies": {
-    "antd": "^3.8.4",
+    "antd": "3.9.1",
     "babel-plugin-import": "^1.8.0",
     "path": "^0.12.7",
     "react": "^16.4.2",
