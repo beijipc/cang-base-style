@@ -4,11 +4,12 @@
 
 .container {
   .container-fixed();
+  width: @container-lg;
   // 开启，禁用移动端
-  @media (max-width: @screen-md-max) {
+  /* @media (max-width: @screen-md-max) {
     padding-left: 20px;
     padding-right: 20px;
-  }
+  } */
   // 关闭，禁用移动端
   // @media (max-width: @screen-xs-max) {
   //   padding-left: 10px;
@@ -20,7 +21,7 @@
   //   width: @container-sm;
   // }
   // // >= 992px
-  @media (min-width: @screen-md-min) {
+  /* @media (min-width: @screen-md-min) {
     // 970px
     width: @container-md;
   }
@@ -33,9 +34,11 @@
   @media (min-width: @screen-xl-min) {
     // 1320px
     width: @container-xl;
-  }
+  } */
 }
-
+html.isMobile .container{
+  width: 100%;
+}
 
 // Fluid container
 //

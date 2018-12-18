@@ -1,6 +1,6 @@
 {
   "name": "cang-base-style",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "华夏收藏网基本样式，含antd",
   "dependencies": {
     "antd": "^3.10.2",
